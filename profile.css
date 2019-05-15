@@ -26,31 +26,38 @@ img{
 
 .profile-header{
     width: 500px;
-    height: 150px;
+    height: 200px;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    display: inline-block; 
+    display: inline-block;
+
 }
 
 #profile-username{
-    width: 80%;
+    float: left; 
+    height: 40px;
+    overflow: hidden;
+    width: 200px;
     font-size:30px;
     font-family: Avenir; 
 }
 
 #schedule-term{
-    width: 40%;
-    font-size: 15px;
-    margin-left: 20px;
+    float: left; 
+    width: 200px;
+    padding-top: 10px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
     font-family: Avenir; 
 }
 
 .tool-bar{
-    margin-top: 40px;
+    margin-top: 30px;
     height: 50px;
 }
 
@@ -69,11 +76,13 @@ img{
 }
 
 .setting-button{
-    margin-left: 50px;
-    width: 100px;
-    height: 50px; 
+    margin-left: 180px;
+    margin-top: 10px;
+    width: 130px;
+    height: 30px; 
     font-size: 20px;
     font-family: Avenir;
+    text-align: center; 
 }
 
 
