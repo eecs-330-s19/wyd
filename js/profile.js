@@ -42,6 +42,8 @@ function addEvent() {
     var eventStart = $('#add-event-start').val();
     var eventEnd = $('#add-event-end').val();
 
+    
+    // Variables to store coordinates of the event element to place it properly on calendar
     var eventElementL;
     var eventElementR;
     var eventElementTop;
