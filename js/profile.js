@@ -30,7 +30,7 @@ function addEvent() {
     
     console.log("added!");
     
-    // Collect event deatails
+    // Collect event details
     var eventDescription = $('#add-event-description').val();
     var eventLocation = $('#add-event-location').val();
     var eventDay = $('#add-event-day').val();
