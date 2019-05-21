@@ -139,7 +139,6 @@ $(document).ready(function() {
 /* Add ability to remove an event that is on the calendar */
 $(document).ready(function() {
    $(document).on("click", ".remove-event-link", function () {
-       console.log("removed!");
        $(this).parent(".event-element").remove();  
    });
 });
