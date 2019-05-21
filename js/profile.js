@@ -20,7 +20,12 @@ function openAddEventBox() {
 document.querySelector('.create-new-event').onclick = openAddEventBox;
 
 
-// Actually add the event once user has entered all data
+/* Actually add the event once user has entered all data
+
+    ***ASSUMING PERFECTLY FORMATTED INPUTS (e.g. One of the weekdays correctly spelled 
+    for "Day of Week")**** 
+    
+*/
 function addEvent() {
     
     console.log("added!");
