@@ -94,7 +94,6 @@ img{
     width: 51%;
 }
 
-
 .schedule_time ul li{
     line-height: 80px;
     font-size: 20px;
@@ -140,7 +139,12 @@ img{
     border-bottom: 1px solid grey;
 }
 
-
+span.event-element-description, span.event-element-location {
+    color: white;
+    font-family: Avenir;
+    display: block;
+    width: 100%;
+}
 
 
 

@@ -20,15 +20,20 @@ function openAddEventBox() {
 document.querySelector('.create-new-event').onclick = openAddEventBox;
 
 
+
+
+
+
 /* Actually add the event once user has entered all data
 
     ***ASSUMING PERFECTLY FORMATTED INPUTS (e.g. One of the weekdays correctly spelled 
-    for "Day of Week")**** 
+    for "Day of Week", only events starting and ending on the hour)**** 
     
 */
 function addEvent() {
-    
-    console.log("added!");
+
+    // ul container offset to position event element on calendar relative to ul
+    var ulOffset = document.querySelector('.schedule_time ul').getBoundingClientRect()['top']-15;
     
     // Collect event details
     var eventDescription = $('#add-event-description').val();
@@ -94,42 +99,28 @@ function addEvent() {
 
     
     // Set the new event's top, bottom, height to start & end at the correct lines on calendar
-    eventElementTop = timeToCoord[eventStart]['bottom'] - (timeToCoord[eventStart]['height'] / 2);
-    eventElementBottom = timeToCoord[eventEnd]['top'] + (timeToCoord[eventEnd]['height'] / 2);
+    eventElementTop = timeToCoord[eventStart]['bottom'] - (timeToCoord[eventStart]['height'] / 2) - ulOffset;
+    eventElementBottom = timeToCoord[eventEnd]['top'] + (timeToCoord[eventEnd]['height'] / 2) - ulOffset;
     eventElementHeight = eventElementBottom - eventElementTop;
-    
-    
-    
-    
-    
-    console.log(eventElementTop);
-    console.log(eventElementBottom);
-    console.log(eventElementL);
-    console.log(eventElementR);
-    console.log(eventElementHeight);
 
     
     // Create the new element
     var eventElement = 
-        `<div class="event-element" style="top:${eventElementTop};bottom:${eventElementBottom};left:${eventElementL};right:${eventElementR};width:77px;height:${eventElementHeight};z-index:10;font-size:10px;">
-            <span>${eventDescription}</span>
-            <span>${eventLocation}</span>
+        `<div class="event-element" style="top:${eventElementTop};bottom:${eventElementBottom};left:${eventElementL};right:${eventElementR};width:77px;height:${eventElementHeight};z-index:10;font-size:10px;position:absolute;background-color:purple;">
+            <a style="float:right;margin-right:3px;color:white;text-decoration:underline;" class="remove-event-link">x</a>
+            <span class="event-element-description">${eventDescription}</span>
+            <span class="event-element-location">${eventLocation}</span>
         </div>`;
     
-    // Find correct place to add the new element
-    for (var timeSlot of timeSlots) {
-        var time = timeSlot.children[0].innerHTML;
-        
-        if (time===eventStart) {
-            timeSlot.insertAdjacentHTML("beforebegin", eventElement);  
-            document.querySelector('.event-element').style.top = eventElementTop;
-            document.querySelector('.event-element').style.bottom = eventElementBottom;
-            document.querySelector('.event-element').style.left = eventElementL;
-            document.querySelector('.event-element').style.right = eventElementR;
-            document.querySelector('.event-element').style.backgroundColor = "red";
-        }
-    }
-
+    // Insert the newly created element
+    document.querySelector('.schedule_time ul').insertAdjacentHTML("beforebegin", eventElement);      
+    
+    //Reset Input Fields
+    $('#add-event-description').val("");
+    $('#add-event-location').val("");
+    $('#add-event-day').val("");
+    $('#add-event-start').val("");
+    $('#add-event-end').val("");
     
     
 }
@@ -137,3 +128,27 @@ function addEvent() {
 $(document).ready(function() {
    $(document).on("click", "#add-event-button", addEvent);
 });
+
+
+
+
+
+
+/* Add ability to remove an event that is on the calendar */
+$(document).ready(function() {
+   $(document).on("click", ".remove-event-link", function () {
+       console.log("removed!");
+       $(this).parent(".event-element").remove();  
+   });
+});
+
+
+
+
+
+
+
+
+
+
+
