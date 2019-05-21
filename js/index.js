@@ -1,3 +1,4 @@
+// Hard-coded profiles
 const profile1 = {name: 'Jack Nicolas', username: 'JackNicolas123', password: 'ilovetony'};
 const profile2 = {name: 'Harry Yu', username: 'HarryYu123', password: 'harrypotter'};
 
@@ -7,6 +8,7 @@ $('.message a').click(
         $('.toggle-form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
 
+// Load profile given valid login info
 function loadProfile() {
     var username = document.querySelector('#login-username').value;
     var password = document.querySelector('#login-pw').value;
@@ -22,6 +24,7 @@ function loadProfile() {
 
 document.getElementById("login-button").onclick = loadProfile;
     
+// Load login/home page after account has been "created"
 function loadLogin() {
     
     alert("Redirecting to login");
@@ -30,3 +33,5 @@ function loadLogin() {
 }
 
 document.getElementById('create-account-button').onclick = loadLogin;
+
+

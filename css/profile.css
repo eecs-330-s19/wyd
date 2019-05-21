@@ -91,7 +91,7 @@ img{
     position: absolute;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 51%;
 }
 
 
@@ -107,7 +107,7 @@ img{
     content: '';
     position: absolute;
     height: 1px;
-    width: 50%;
+    width: 100%;
     margin-top: 39px;
     margin-left: 10px;
     background: grey;
@@ -132,9 +132,9 @@ img{
 
 .calendar_day ul li{
     display: inline-block;
-    font-size: 25px;
+    font-size: 21px;
     text-align:center;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-right: 10px;
     font-family: Avenir;
     border-bottom: 1px solid grey;
