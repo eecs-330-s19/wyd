@@ -108,7 +108,7 @@ function addEvent() {
     
     // Create the new element
     var eventElement = 
-        `<div class="event-element" style="top:${eventElementTop};bottom:${eventElementBottom};left:${eventElementL};right:${eventElementR};width:77px;height:${eventElementHeight};z-index:10;font-size:10px;position:absolute;background-color:purple;">
+        `<div class="event-element" style="top:${eventElementTop};bottom:${eventElementBottom};left:${eventElementL};right:${eventElementR};width:77px;height:${eventElementHeight};z-index:10;font-size:10px;position:absolute;background-color:#afbaea;">
             <a style="float:right;margin-right:3px;color:white;text-decoration:underline;" class="remove-event-link">x</a>
             <span class="event-element-description">${eventDescription}</span>
             <span class="event-element-location">${eventLocation}</span>
