@@ -58,8 +58,7 @@ function addEvent() {
                       'Tuesday': "", 
                       'Wednesday': "", 
                       'Thursday': "", 
-                      'Friday': "";
-                     }
+                      'Friday': ""};
     
     // Go through day elements and update map with proper coordinates
     for (day of days) {
