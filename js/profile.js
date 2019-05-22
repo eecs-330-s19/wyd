@@ -58,7 +58,7 @@ function addEvent() {
                       'Tuesday': "", 
                       'Wednesday': "", 
                       'Thursday': "", 
-                      'Friday': ""
+                      'Friday': "",
                       'Saturday':"",
                       'Sunday':""};
     
