@@ -146,6 +146,39 @@ span.event-element-description, span.event-element-location {
     width: 100%;
 }
 
+.add-event-box{
+    font-size: 30px;
+    width: 500px;
+}
+
+#add-event-description{
+    font-size: 15px;
+}
+
+#add-event-location{
+    font-size: 15px;
+}
+        
+#add-event-day{
+    margin-bottom: 20px;
+    font-size: 15px;
+} 
+        
+#add-event-start{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+        
+#add-event-end{
+    font-size: 14px;
+    margin-bottom:5px;
+}
+      
+#add-event-button{
+    font-size: 15px;
+    color: purple;
+}
+
 
 
 
