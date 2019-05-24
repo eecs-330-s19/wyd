@@ -1,0 +1,185 @@
+body{
+    font-family: 'Lato', 'sans-serif';
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.page-wrapper{
+    width: 100%;
+    height: 100%;
+
+}
+.calendar-container{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.profile-container{
+    width: 30%;
+    height: 100%;
+    margin-right: 10%;
+    float:right;
+}
+
+.profile-header{
+    width: 500px;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    display: inline-block;
+
+}
+
+#profile-username{
+    float: left; 
+    height: 40px;
+    overflow: hidden;
+    width: 200px;
+    font-size:30px;
+    font-family: Avenir; 
+}
+
+#schedule-term{
+    float: left; 
+    width: 200px;
+    padding-top: 10px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: Avenir; 
+}
+
+.tool-bar{
+    margin-top: 30px;
+    height: 50px;
+}
+
+.tool-element{
+    display: inline-block;
+    padding-top: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    width: 32%;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Avenir;
+    background-color: rgba(175, 186, 234);
+}
+
+.setting-button{
+    margin-left: 180px;
+    margin-top: 10px;
+    width: 130px;
+    height: 30px; 
+    font-size: 20px;
+    font-family: Avenir;
+    text-align: center; 
+}
+
+.schedule_time{
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 51%;
+}
+
+.schedule_time ul li{
+    line-height: 80px;
+    font-size: 20px;
+    list-style-type: none;
+    font-family: Avenir;
+    position: relative;
+}
+
+.schedule_time ul li:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    margin-top: 39px;
+    margin-left: 10px;
+    background: grey;
+    
+    
+}
+
+
+.calendar_title{
+    text-align: center;
+    font-size: 35px;
+    font-family: Avenir;
+}
+
+
+.calendar_day{
+    width: 100%;
+    text-align: left;
+    margin-left: 4%;
+}
+
+
+.calendar_day ul li{
+    display: inline-block;
+    font-size: 21px;
+    text-align:center;
+    margin-left: 25px;
+    margin-right: 10px;
+    font-family: Avenir;
+    border-bottom: 1px solid grey;
+}
+
+span.event-element-description, span.event-element-location {
+    color: white;
+    font-family: Avenir;
+    display: block;
+    width: 100%;
+}
+
+.add-event-box{
+    font-size: 30px;
+    width: 500px;
+}
+
+#add-event-description{
+    font-size: 15px;
+}
+
+#add-event-location{
+    font-size: 15px;
+}
+        
+#add-event-day{
+    margin-bottom: 20px;
+    font-size: 15px;
+} 
+        
+#add-event-start{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+        
+#add-event-end{
+    font-size: 14px;
+    margin-bottom:5px;
+}
+      
+#add-event-button{
+    font-size: 15px;
+    color: #afbaea;
+}
+
+
+
+
+
