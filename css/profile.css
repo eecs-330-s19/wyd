@@ -179,6 +179,10 @@ span.event-element-description, span.event-element-location {
     color: #afbaea;
 }
 
+.personal-schedule-event, .mutual-availability {
+    visibility: hidden;
+    
+}
 
 
 

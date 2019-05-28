@@ -146,6 +146,44 @@ $(document).ready(function() {
 
 
 
+function openSearch() {
+    var profileContainer = document.querySelector('.profile-container');
+    profileContainer.innerHTML += `
+    <div class="search-friend-box">
+        <input id="search-friend-bar" type="text" placeholder="Name">
+        <button id="search-friend-button">Search</button>
+    </div>
+    `;
+    
+}
+
+document.querySelector('.search-friend').onclick = openSearch;
+
+
+
+
+function searchFriend() {
+    
+    var searchName = $("#search-friend-bar").val();
+    
+    if (searchName==="Mike Jackson") {
+        
+        window.location = 'friend.html';
+        
+    } else {
+        
+        alert("No friends found. Please revise search input.");
+        
+    }
+    
+}
+
+
+$(document).ready(function() {
+   $(document).on("click", "#search-friend-button", searchFriend);
+});
+
+
 
 
 
