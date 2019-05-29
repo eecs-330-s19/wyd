@@ -9,6 +9,16 @@ function openAddEventBox() {
     <div class="add-event-box">
         <input id="add-event-description" type="text" placeholder="Description">
         <input id="add-event-location" type="text" placeholder="Location">
+        <div class="dropdown">
+          <button onclick="showDropdown()" class="dropbtn">Day of Week</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Monday</a>
+            <a> Tuesday </a>
+            <a> Wednesday </a>
+            <a> Thursday </a>
+            <a> Friday </a>
+          </div>
+        </div>
         <input id="add-event-day" type="text" placeholder="Day of Week">
         <input id="add-event-start" type="time" placeholder="Start Time">
         <input id="add-event-end" type="time" placeholder="End Time">
@@ -20,7 +30,25 @@ function openAddEventBox() {
 document.querySelector('.create-new-event').onclick = openAddEventBox;
 
 
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function showDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 
 
