@@ -175,6 +175,15 @@ span.event-element-description, span.event-element-location {
     width: 500px;
 }
 
+.event-box-header{
+    margin-left: 200px; 
+    margin-right: 100px; 
+    width: 500px;
+    font-size: 30px; 
+    font-family: Avenir;
+    color: #8705A8; 
+}
+
 #add-event-description{
     font-size: 15px;
     margin-bottom: 5px; 
@@ -200,61 +209,22 @@ span.event-element-description, span.event-element-location {
 }
       
 #add-event-button{
-    font-size: 15px;
-    color: #afbaea;
+    font-size: 13px;
+    font-family: Avenir;
+    color: white;
+    background-color: #8705A8; 
+    border-radius: 5px;
 }
 
-
-/* ---------------------------------------------------------------------------------------------
-/* Dropdown Button */
-.dropbtn {
-  background-color: #4E4C4E;
-  color: white;
-  height: 21px;
-  width: 120px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px; 
+#add-event-button:hover{
+    background-image: linear-gradient(#8705A8, #AB6DBD);
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-image: linear-gradient(#4E4C4E, #736F73);
-
+.day-selector{
+    width: 150px;
+    height:25px;
+    font-size: 14px;
 }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  font-size: 15px;
-  font-family: Avenir;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
 
 
 
