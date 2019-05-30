@@ -226,6 +226,10 @@ span.event-element-description, span.event-element-location {
     font-size: 14px;
 }
 
+.personal-schedule-event, .mutual-availability {
+    visibility: hidden;
+    
+}
 
 
 
