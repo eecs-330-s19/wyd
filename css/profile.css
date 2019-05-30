@@ -32,9 +32,10 @@ img{
     padding-left: 20px;
     padding-right: 20px;
     border-style: solid;
-    border-width: 1px;
-    border-color: black;
+    border-width: 2px;
+    border-color: #B6AAD0;
     display: inline-block;
+    border-radius: 10px;
 
 }
 
@@ -57,33 +58,56 @@ img{
     font-family: Avenir; 
 }
 
+/***** PROFILE *****/
 .tool-bar{
     margin-top: 30px;
     height: 50px;
+    padding-left: 5px;
 }
 
 .tool-element{
     display: inline-block;
-    padding-top: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
+    padding-top: 20px;
     width: 32%;
-    height: 50px;
+    height: 40px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     font-family: Avenir;
-    background-color: rgba(175, 186, 234);
+    color: white;
+    background-color: #4e2984;
+    border-radius: 15px;
+}
+
+.tool-element:hover{
+    background-color: rgba(131, 110, 169, 0.6);
+}
+
+.log-out-button{
+    margin-top: 12px;
+    margin-left: 10px; 
+    width: 60px;
+    height:20px;
+    font-size: 11px;
+    text-align: center; 
+    font-family: Avenir;
+    border-radius: 5px;
 }
 
 .setting-button{
-    margin-left: 180px;
+    margin-left: 350px;
     margin-top: 10px;
     width: 130px;
     height: 30px; 
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
     font-family: Avenir;
-    text-align: center; 
+    color: white;
+    background-color: #ACAAAB; 
+    border-radius: 10px;
+}
+
+.setting-button:hover{
+    background-color: rgba(172, 170, 171, 0.6);
 }
 
 .schedule_time{
@@ -139,6 +163,7 @@ img{
     border-bottom: 1px solid grey;
 }
 
+/***** COMPONENT 2: ADD EVENT; *****/
 span.event-element-description, span.event-element-location {
     color: white;
     font-family: Avenir;
@@ -151,8 +176,18 @@ span.event-element-description, span.event-element-location {
     width: 500px;
 }
 
+.event-box-header{
+    margin-left: 200px; 
+    margin-right: 100px; 
+    width: 500px;
+    font-size: 30px; 
+    font-family: Avenir;
+    color: #4e2984; 
+}
+
 #add-event-description{
     font-size: 15px;
+    margin-bottom: 5px;
 }
 
 #add-event-location{
@@ -175,15 +210,54 @@ span.event-element-description, span.event-element-location {
 }
       
 #add-event-button{
-    font-size: 15px;
-    color: #afbaea;
+    font-size: 13px;
+    font-family: Avenir;
+    color: white;
+    background-color: #4e2984; 
+    border-radius: 5px;
+}
+
+#add-event-button:hover{
+    background-color: rgba(131, 110, 169, 0.6);
 }
 
 .personal-schedule-event, .mutual-availability {
     visibility: hidden;
-    
 }
 
+/***** COMPONENT 3: SEARCH FRIEND; *****/
+.search-friend-box{
+    font-size: 30px;
+    width: 500px;
+}
 
+.search-friend-header{
+    margin-left: 200px; 
+    margin-right: 100px; 
+    width: 500px;
+    font-size: 30px; 
+    font-family: Avenir;
+    color: #4e2984; 
+}
 
+#search-friend-bar{
+    font-family: Avenir;
+    font-size: 14px;
+}
 
+#search-friend-button{
+    font-size: 14px;
+    font-family: Avenir;
+    color: white;
+    background-color: #4e2984; 
+    border-radius: 5px;
+}
+
+#search-friend-button:hover{
+    background-color: rgba(131, 110, 169, 0.6);
+}
+
+.day-selector{
+    width: 150px;
+    height:25px;
+    font-size: 14px;
