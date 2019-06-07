@@ -5,10 +5,40 @@
     </head>
 
     <body>
+
+        <!-- TEST
+        <div class = "head-bar">
+            <h1> WYD </h1>
+            <div class = "tool-bar-0">
+                <a href = "index.html">
+                    <button class = "setting-button"> 
+                        Log Out
+                    </button>
+                </a>
+                <button class = "setting-button">
+                    Settings
+                </button>
+            </div>         
+        </div>
+        -->
+
+        <ul class="head-bar">
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn"> <img src ="image.png" height="20"    width="25"> </a>
+                <div class="dropdown-content">
+                    <a>Settings</a>
+                    <a href = "index.html">Log Out</a>
+                </div>
+            </li>
+            
+         </ul>
+
         <div class = "page-wrapper">
             <div class='calendar-container'>
                 <div class = 'calendar_title'>
-                My Calendar
+                    <i class="arrow left"></i>
+                    Week of 6/3 - 6/7
+                    <i class="arrow right"></i>
                 </div>
         
                 <div class = 'calendar_day'>
@@ -44,20 +74,17 @@
             
             <div class = "profile-container">
                 
+
+ 
                 <div class = "profile-header">
-                    <div id = "profile-username"> Jack Nicolas</div>
-                    <div id = "schedule-term"> Schedule of Fall 2019 </div>
-                    <a href = "index.html">
-                        <button  class = "log-out-button">
-                            Log Out
-                        </button>
-                    </a>
-                    <button class = "setting-button">
-                        Settings
-                    </button>
-                    
-                    
-                    
+                    <div id = "profile-username" >
+                        Jack Nicolas
+                    </div>
+
+                    <div id = "profile-picture" >
+                        <img src="profile_picture.jpeg" alt="Smiley face" height="150" width="150">
+                    </div>
+
                     <div class = "tool-bar">
                         <div class = "tool-element create-new-event">
                             Add Event 
@@ -68,7 +95,7 @@
                         </div>
 
                         <div class = "tool-element">
-                            Import Caesar 
+                            Import From Caesar 
                         </div>
 
                     </div>

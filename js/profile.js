@@ -4,10 +4,10 @@
 // Open box to add new event
 function openAddEventBox() {
     
-    var profileContainer = document.querySelector('.profile-container');
+    var profileContainer = document.querySelector('.profile-header');
     profileContainer.innerHTML += `
     <div class="add-event-box">
-        <text class = "event-box-header">Add Event</text>
+    <text class = "event-box-header">Add Event</text>
         <input id="add-event-description" type="text" placeholder="Description">
         <input id="add-event-location" type="text" placeholder="Location">
         <select class = "day-selector" id = "add-event-day" placeholder = "Day of Week">
@@ -16,7 +16,7 @@ function openAddEventBox() {
           <option value= "Wednesday"> Wednesday</option>
           <option value= "Thursday"> Thursday</option>
           <option value= "Friday"> Friday</option>
-        </select> 
+        </select>         
         <input id="add-event-start" type="time" placeholder="Start Time">
         <input id="add-event-end" type="time" placeholder="End Time">
         <button id="add-event-button">Add Event</button>
@@ -25,9 +25,6 @@ function openAddEventBox() {
 }
 
 document.querySelector('.create-new-event').onclick = openAddEventBox;
-
-
-
 
 
 /* Actually add the event once user has entered all data
@@ -114,7 +111,7 @@ function addEvent() {
     
     // Create the new element
     var eventElement = 
-        `<div class="event-element" style="top:${eventElementTop};bottom:${eventElementBottom};left:${eventElementL};right:${eventElementR};width:77px;height:${eventElementHeight};z-index:10;font-size:10px;position:absolute;background-color:#afbaea;">
+        `<div class="event-element" style="top:${eventElementTop};bottom:${eventElementBottom};left:${eventElementL};right:${eventElementR};width:77px;height:${eventElementHeight};z-index:10;font-size:15px;position:absolute;background-color:#4e2984;">
             <a style="float:right;margin-right:3px;color:white;text-decoration:underline;" class="remove-event-link">x</a>
             <span class="event-element-description">${eventDescription}</span>
             <span class="event-element-location">${eventLocation}</span>
@@ -153,9 +150,10 @@ $(document).ready(function() {
 
 
 function openSearch() {
-    var profileContainer = document.querySelector('.profile-container');
+    var profileContainer = document.querySelector('.profile-header');
     profileContainer.innerHTML += `
     <div class="search-friend-box">
+    <text class = "search-friend-header">Search Friend</text>
         <input id="search-friend-bar" type="text" placeholder="Name">
         <button id="search-friend-button">Search</button>
     </div>

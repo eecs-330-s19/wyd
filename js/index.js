@@ -27,7 +27,7 @@ document.getElementById("login-button").onclick = loadProfile;
 // Load login/home page after account has been "created"
 function loadLogin() {
     
-    alert("Redirecting to login");
+    alert("Account successfully created");
     window.location = 'index.html';
     
 }
