@@ -15,8 +15,9 @@ function showScheduleOverlap() {
 }
 
 document.querySelector('.overlap-button').onclick = showScheduleOverlap;
-
-
+$('.overlap-button').click(function(){
+  $(this).toggleClass('clicked');
+});
 
 function showMutualFree() {
     
@@ -31,4 +32,7 @@ function showMutualFree() {
 }
 
 document.querySelector('.mutual-button').onclick = showMutualFree;
+$('.mutual-button').click(function(){
+  $(this).toggleClass('clicked');
+});
 
